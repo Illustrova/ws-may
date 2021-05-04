@@ -1,0 +1,64 @@
+{
+  "gray": {
+    "50": {
+      "category": "fill",
+      "comment": "F9FAFB",
+      "value": "rgba(249, 250, 251, 1)",
+      "type": "color"
+    },
+    "100": {
+      "category": "fill",
+      "comment": "F3F4F6",
+      "value": "rgba(243, 244, 246, 1)",
+      "type": "color"
+    },
+    "200": {
+      "category": "fill",
+      "comment": "E5E7EB",
+      "value": "rgba(229, 231, 235, 1)",
+      "type": "color"
+    },
+    "300": {
+      "category": "fill",
+      "comment": "D1D5DB",
+      "value": "rgba(209, 213, 219, 1)",
+      "type": "color"
+    },
+    "400": {
+      "category": "fill",
+      "comment": "9CA3AF",
+      "value": "rgba(156, 163, 175, 1)",
+      "type": "color"
+    },
+    "500": {
+      "category": "fill",
+      "comment": "6B7280",
+      "value": "rgba(107, 114, 128, 1)",
+      "type": "color"
+    },
+    "600": {
+      "category": "fill",
+      "comment": "4B5563",
+      "value": "rgba(75, 85, 99, 1)",
+      "type": "color"
+    },
+    "700": {
+      "category": "fill",
+      "comment": "374151",
+      "value": "rgba(55, 65, 81, 1)",
+      "type": "color"
+    },
+    "800": {
+      "category": "fill",
+      "comment": "1F2937",
+      "value": "rgba(31, 41, 55, 1)",
+      "type": "color"
+    },
+    "900": {
+      "category": "fill",
+      "comment": "111827",
+      "value": "rgba(17, 24, 39, 1)",
+      "type": "color"
+    }
+  }
+}
