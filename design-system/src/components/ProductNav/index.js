@@ -1,13 +1,19 @@
 
 import React from "react";
 import styled from "styled-components";
-import {Icon, Button, colors} from "../.."
+import {Icon, Button, colors, spacing} from "../.."
+console.log("🚀 ~ file: index.js ~ line 5 ~ spacing", spacing);
 /* ProductNav
  *
  * Filters and sorting
  */
 const ProductNav = (props) => {
-  return <StyledProductNav>
+  
+
+  return (
+  <StyledProductNav>
+    <h4>All Product</h4>
+    <StyledIconWrapper>  
     <StyledButton color="transparent">
       <Icon name="viewItem" width={24} height={16} />
     </StyledButton>
@@ -18,10 +24,17 @@ const ProductNav = (props) => {
     <StyledButton color="transparent">
       <Icon name="filter" width={24} height={16} />
     </StyledButton>
-    </StyledProductNav>;
+        </StyledIconWrapper>
+    </StyledProductNav>
+  )
 };
 
-export const StyledProductNav = styled.div`
+const StyledProductNav = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: ${spacing.spacing2XlBottom};
+`;
+export const StyledIconWrapper = styled.div`
   display: flex;
   align-items: center;
 `;
