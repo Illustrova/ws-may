@@ -1,7 +1,6 @@
 
 import React from "react";
 import styled from "styled-components";
-import { node } from 'prop-types';
 
 /* Navigation
  *
@@ -16,12 +15,6 @@ const Navigation = ({ firstAction = null, title, lastAction = null }) => {
     </StyledNavigation>
     );
 };
-
-Navigation.propTypes = {
-  title: node,
-  lastAction: node,
-  title: node,
-}
 
 export const StyledNavigation = styled.div`
   display: flex;
