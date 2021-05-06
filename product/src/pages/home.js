@@ -14,10 +14,10 @@ const Home = () => {
   return (
     <div>
       <PageWrapper>
-     <Navigation
-      firstAction={<Avatar src={data.user.avatar} />}
-      lastAction={<Button isOutline><Icon name ="menu" /></Button>}
-    />
+        <Navigation
+          firstAction={<Avatar src={data.user.avatar} />}
+          lastAction={<Button isOutline><Icon name ="menu" /></Button>}
+        />
         <Title>Store</Title>
         <Container>
           <h4>All Product</h4>
@@ -42,8 +42,6 @@ const Home = () => {
 const PageWrapper = styled.div`
   padding: 64px 40px;
 `;
-
-
 
 
 const Container = styled.div`
