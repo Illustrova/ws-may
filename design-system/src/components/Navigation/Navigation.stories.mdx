@@ -1,0 +1,58 @@
+
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+import { config } from "storybook-addon-designs";
+
+import Navigation, { NavigationTitle } from ".";
+import { Avatar, Button, Icon } from '../..';
+
+<Meta title="Components/Navigation" parameters={{
+    viewport: {
+      defaultViewport: "mobile1",
+    },
+    design: config({
+      type: "figma",
+      url: "https://www.figma.com/file/AWWkZAdBsBvZJHu6PnjbtP/Workshop-design-file-1?node-id=270%3A201",
+    }),
+  }}/>
+
+
+export const avatarSrc = "/sampleImages/userImageSample.jpg"
+
+## Navigation
+
+A wrapper component for the app navigation, with slots for two actions and a title.
+
+<Canvas>
+  <Story name="Logged in with hamburger menu">
+    <Navigation
+      firstAction={<Avatar src={avatarSrc} />}
+      lastAction={<Button isOutline><Icon name ="menu" /></Button>}
+    />
+  </Story>
+  <Story name="Details view with back button">
+    <Navigation
+      firstAction={<Button isOutline><Icon name ="arrowBack" /></Button>}
+      title="Product details"
+    />
+  </Story>
+  <Story name="Two buttons and title">
+    <Navigation
+      firstAction={<Button isOutline><Icon name ="arrowBack" /></Button>}
+      title="Product details"
+      lastAction={<Button isOutline><Icon name ="settings" /></Button>}
+    />
+  </Story>
+  <Story name="Colored background">
+    <div style={{ width: '100vw', height: '100vh', background: 'wheat', margin: '-1rem', padding: '1rem' }}>
+    <Navigation
+      firstAction={<Button color="white"><Icon name ="arrowBack" /></Button>}
+      title="Product details"
+      lastAction={<Button color="white"><Icon name ="settings" /></Button>}
+    />
+    </div>
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable of={Navigation} />

@@ -17,6 +17,10 @@
   "plugins": [
     ["styled-components"],
     ["@babel/plugin-proposal-object-rest-spread"],
+    // https://github.com/babel/babel/issues/11622#issuecomment-638609015
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-private-methods",
+    
     [
       "module-resolver",
       {

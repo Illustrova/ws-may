@@ -18,8 +18,8 @@ const StyledButton = styled.button`
   border-color: ${(p) =>
     p.isOutline
       ? p.isActive
-        ? colors.pinkPink100
-        : colors.secondaryBlack20
+        ? colors.onBackground500
+        : colors.onSurface100
       : "transparent"};
   box-sizing: border-box;
   line-height: 24px;
@@ -34,8 +34,8 @@ const StyledButton = styled.button`
   color: ${(p) =>
     p.isOutline
       ? p.isActive
-        ? colors.pinkPink80
-        : colors.secondaryBlack100
+        ? colors.onBackground500
+        : colors.onBackground300
       : colors.secondaryWhite100};
   font-size: 14px;
   font-weight: 700;

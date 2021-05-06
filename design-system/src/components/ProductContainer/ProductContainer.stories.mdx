@@ -1,0 +1,29 @@
+import { Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
+
+import ProductContainer from ".";
+import Card from "../Card";
+
+<Meta title="Components/ProductContainer" />
+
+export const cardArgs = {
+  name: "Nike Air Force 1 '07 LX",
+  image: "/sampleImages/item1.png",
+  price: "95.00",
+  subtitle: "Men's Shoe",
+};
+
+
+## ProductContainer
+
+TODO: add component description
+
+<Canvas>
+  <Story name="Default">
+    <ProductContainer>
+      <Card size="medium" {...cardArgs} />
+      <Card size="medium" {...cardArgs} />
+      <Card size="medium" {...cardArgs} />
+      <Card size="medium" {...cardArgs} />
+    </ProductContainer>
+  </Story>
+</Canvas>

@@ -1,4 +1,5 @@
 {
+  "homepage": "https://illustrova.github.io/ws-may",
   "name": "design-system",
   "version": "0.1.3",
   "main": "dist/design-system.js",
